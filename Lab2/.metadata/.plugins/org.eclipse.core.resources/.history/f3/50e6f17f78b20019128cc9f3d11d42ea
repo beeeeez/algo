@@ -1,0 +1,7 @@
+package lab2;
+
+public class twentyPercent {
+	public double calculateDiscount(double extension) {
+		return extension*0.2;
+	}
+}

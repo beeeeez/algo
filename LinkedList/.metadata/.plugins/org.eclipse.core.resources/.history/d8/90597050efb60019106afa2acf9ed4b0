@@ -1,0 +1,81 @@
+package datastructures;
+
+public class homeworkList<E> extends LinkedList<E>{
+	
+	public int sum() {
+		moveToStart();
+		next();
+		int sum=0;				
+		for(int i =0;i<cnt; i++) {
+			sum+=(int)curr.element();
+			next();
+		}
+		return sum+=(int)curr.element();
+		
+
+		
+	}
+	
+	public int max() {
+		moveToStart();
+		next();
+		int jammy=0;
+		for(int i=0;i<cnt; i++) {			
+			if((int)curr.element()>jammy) {
+				jammy=(int)curr.element();
+			}
+			next();
+		}
+		return jammy;
+		
+	}
+	
+	public int min() {
+		moveToStart();
+		next();
+		int jammy=0;
+		for(int i=0;i<cnt; i++) {	
+			if(i==0) {
+				jammy=(int)curr.element();
+			}
+			if((int)curr.element()<jammy) {
+				jammy=(int)curr.element();
+			}
+			next();
+		}
+		return jammy;
+		
+	}
+	
+	public void removeDuplicates() {
+		moveToStart();
+		next();
+		LinkedList<E> jimmy = new LinkedList<E>();
+		boolean doop=false;
+		for(int i=0;i<cnt; i++) {	
+			doop=false;
+			System.out.println("main list position "+currPos()+ " current value "+curr.element());
+			jimmy.moveToStart();
+			for(int j=0;j<jimmy.cnt;j++) {
+				System.out.println("jimmy's current value "+jimmy.getValue());
+			if(jimmy.getValue()==curr.element()) {
+				System.out.println("removing : "+curr.element() + "at main list position "+currPos());
+				remove();
+				doop=true;
+			}
+			jimmy.next();
+			}
+		
+		if(doop==false) {
+			jimmy.append(curr.element());
+			System.out.println("adding to jimmy list : "+curr.element()+" at position "+jimmy.cnt);
+			
+		}
+			next();
+		}
+		
+		
+	}
+
+	
+}

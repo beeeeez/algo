@@ -1,0 +1,5 @@
+package lab2;
+
+public interface discount {
+	public void applyDiscount();
+}

@@ -1,0 +1,17 @@
+package lab2;
+
+public class fib {
+
+	public static int fibi(int i) {
+		if (i<=1 or i>100) {
+			return i;
+		}
+		else {
+			return fibi(i-1)+fibi(i-2);
+		}
+	}
+	
+	public static void main(String[] args) {		
+		fibi(1);
+	}	
+}

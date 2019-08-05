@@ -1,0 +1,23 @@
+package lab2;
+
+public class fib {
+
+	public static int fibi(int i, int j) {
+	 
+		
+		int x=i+j;i=j;j=x;
+		System.out.println(i);
+		if(j<100) {
+			fibi(i,j);
+		}
+		return j;
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(fibi(1,0));
+	}	
+}

@@ -1,0 +1,25 @@
+package lab2;
+
+public class doTheStuff {
+
+	public static void main(String[] args) {
+		invoice AAA1 = new JCPenny(20, 50);
+		AAA1.who();
+		AAA1.applyDiscount();
+		AAA1.applyFreight();
+		AAA1.totalInvoice();
+		
+		invoice BBB2 = new NaragansettLager(200, 25);
+		AAA1.who();
+		AAA1.applyDiscount();
+		AAA1.applyFreight();
+		AAA1.totalInvoice();
+
+		invoice CCC3 = new NationalFootballLeague(500, 200);
+		AAA1.who();
+		AAA1.applyDiscount();
+		AAA1.applyFreight();
+		AAA1.totalInvoice();
+		
+	}
+}

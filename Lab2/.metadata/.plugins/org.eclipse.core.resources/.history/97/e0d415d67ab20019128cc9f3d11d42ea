@@ -1,0 +1,15 @@
+package lab2;
+
+public class NaragansettLager extends invoice {
+	 public NaragansettLager(double e, double w) {
+		super(e, w);
+		invoiceDiscount = new tenPercent();
+		invoiceFreight = new UPS();		
+	}
+	 public void who() {
+		 System.out.println("JC Penny");
+	 }
+
+
+
+}

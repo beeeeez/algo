@@ -1,0 +1,16 @@
+package datastructures;
+
+public class dotheThing {
+	
+	
+	public static void main(String[] args) {
+		homeworkList jimmy = new homeworkList();
+		
+		for(int i=1;i<10;i++) {	
+			jimmy.append(1);
+			System.out.println(jimmy.getValue());
+		}
+		System.out.println("sum :" +jimmy.sum());
+		
+	}
+}
