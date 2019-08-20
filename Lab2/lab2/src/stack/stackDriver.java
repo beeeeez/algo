@@ -10,6 +10,10 @@ public class stackDriver {
 		jimmy.push(15);
 		jimmy.push(15);
 		jimmy.push(15);
+		
+		for (int i=0; i<500;i++) {
+			jimmy.push(500);			
+		}
 
 	}
 }

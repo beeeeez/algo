@@ -1,0 +1,51 @@
+package recursion;
+
+public class look {
+
+	public static void main(String[] args) {
+		
+		System.out.println(dotheThing("1",5));
+		
+	}
+	
+	public static String dotheThing(String jimmy,int iterations) {
+		String jammy="";
+		if(iterations==0) {
+			return 
+		}
+		for(int i=0;i<jimmy.length();i++) {
+			if(jimmy.charAt(i)!=jimmy.charAt(i+1)) {
+				jammy+=jimmy.charAt(i);
+				jammy+=i;
+			}
+		}
+		iterations--;
+		if(iterations==0) {
+			return jammy;
+		}
+		return dotheThing(jammy, iterations);
+	
+		
+		/*
+		if(i==0) {
+			return jimmy;
+		}		
+		for(int j=0;j<jimmy.length();j++) {
+			if(x==(int)jimmy.charAt(j)) {
+				c++;
+			}
+			else {
+				jammy+=((int)jimmy.charAt(j)-1);
+				jammy+=c;
+				x = (int)jimmy.charAt(j);
+			}
+			
+		}
+		
+		
+		i--;
+		return dotheThing(jammy,i);
+	*/
+			
+	}
+}

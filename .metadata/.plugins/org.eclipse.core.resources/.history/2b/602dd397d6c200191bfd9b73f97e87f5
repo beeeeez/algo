@@ -1,0 +1,16 @@
+package meh;
+
+public class meh {
+
+	public static void main(String[] args) {
+		double kay = jimmy(6,2);
+		System.out.println(kay);
+		
+	}
+	public double jimmy(double jim, int n ) {
+		if(n==0) {
+			return 1;
+		}
+		return n * jimmy(n, n-1)
+	}
+}

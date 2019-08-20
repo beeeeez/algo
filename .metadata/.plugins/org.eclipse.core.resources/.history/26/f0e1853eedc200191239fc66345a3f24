@@ -1,0 +1,26 @@
+package recursion;
+
+public class flubber {
+	
+	public static void main(String[] args) {
+		
+		String flub = "ABCDEFG";
+		System.out.println(reverse(flub,flub.length()));
+	}
+	
+	public static String reverse(String jimmy, int i) {		
+		String jammy=jimmy.valueOf(jimmy.charAt(i));
+		if(i==0) {
+			return jammy;
+		}
+		i--;
+		return reverse(jimmy,i);
+		
+		
+		
+	}
+
+	
+	
+	
+}
