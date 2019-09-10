@@ -4,7 +4,7 @@ public class look {
 
 	public static void main(String[] args) {
 		
-		System.out.println(dotheThing("1",5));
+		dotheThing("1",5);
 		
 	}
 	
@@ -12,22 +12,22 @@ public class look {
 		if(iterations==0) {
 			return jimmy;
 		}
-		StringBuilder result= new StringBuilder();
+		String jammy="";
 		
 		 
-		char repeat= jimmy.charAt(0);
+		char hold= jimmy.charAt(0);
 		jimmy= jimmy.substring(1) + " ";
-		int times= 1;	 
-		for(char actual: jimmy.toCharArray()){
-			if(actual != repeat){
-				result.append(times + "" + repeat);
-				times= 1;
-				repeat= actual;
+		int i= 1;	 
+		for(char chr: jimmy.toCharArray()){
+			if(chr != hold){
+				jammy+=i + "" + hold;
+				i= 1;
+				hold= chr;
 			}else{
-				times+= 1;
+				i+= 1;
 			}
 		}
-		System.out.println(result.toString());
-		return dotheThing(result.toString(),iterations-1);
+		System.out.println(jammy);
+		return dotheThing(jammy,iterations-1);
 	}
 }
